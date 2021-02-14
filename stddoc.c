@@ -99,7 +99,7 @@
 #include <string.h>
 static void stddoc( FILE *in, FILE *out ) {
     fprintf(out, "%s\n", "<meta charset='utf-8' emacsmode='-*- markdown -*-'>");
-    fprintf(out, "%s\n", "<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/aras-p/markdeep-docs-style@master/markdeep-docs.css?'>");
+    fprintf(out, "%s\n", "<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/iddev5/markdeep-docs-style@master/markdeep-docs.css?'>");
     fprintf(out, "%s\n", "<style>.backtick, .tilde {overflow-x: auto;} .longTOC {overflow-x: hidden;}</style>");
     struct { int on, prev; } stack[256] = {0}, *quote = stack;
     for( char *buffer = (char *)malloc(16384); buffer; buffer = (free(buffer), 0))
